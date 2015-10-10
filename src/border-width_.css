@@ -1,0 +1,49 @@
+/*! minions.css | MIT License | https://github.com/chantastic/minions.css */
+
+.bw_0  > *, .btw_0  > * , .brw_0  > * , .bbw_0  > *, .blw_0  > *, .bxw_0  > *, .byw_0  > *,
+.bw_1p > *, .btw_1p > * , .brw_1p > * , .bbw_1p > *, .blw_1p > *, .bxw_1p > *, .byw_1p > *,
+.bw_2p > *, .btw_2p > * , .brw_2p > * , .bbw_2p > *, .blw_2p > *, .bxw_2p > *, .byw_2p > *,
+.bw_3p > *, .btw_3p > * , .brw_3p > * , .bbw_3p > *, .blw_3p > *, .bxw_3p > *, .byw_3p > *,
+.bw_4p > *, .btw_4p > * , .brw_4p > * , .bbw_4p > *, .blw_4p > *, .bxw_4p > *, .byw_4p > * {
+  border-width: 0; border-style: solid
+}
+
+.bw_0    > * { border-width:        0 }
+  .btw_0 > * { border-top-width:    0 }
+  .brw_0 > * { border-right-width:  0 }
+  .bbw_0 > * { border-bottom-width: 0 }
+  .blw_0 > * { border-left-width:   0 }
+  .bxw_0 > * { border-right-width:  0; border-left-width:   0 }
+  .byw_0 > * { border-top-width:    0; border-bottom-width: 0 }
+
+.bw_1p    > * { border-width:        1px }
+  .btw_1p > * { border-top-width:    1px }
+  .brw_1p > * { border-right-width:  1px }
+  .bbw_1p > * { border-bottom-width: 1px }
+  .blw_1p > * { border-left-width:   1px }
+  .bxw_1p > * { border-right-width:  1px; border-left-width:   1px }
+  .byw_1p > * { border-top-width:    1px; border-bottom-width: 1px }
+
+.bw_2p    > * { border-width:        2px }
+  .btw_2p > * { border-top-width:    2px }
+  .brw_2p > * { border-right-width:  2px }
+  .bbw_2p > * { border-bottom-width: 2px }
+  .blw_2p > * { border-left-width:   2px }
+  .bxw_2p > * { border-right-width:  2px; border-left-width:   2px }
+  .byw_2p > * { border-top-width:    2px; border-bottom-width: 2px }
+
+.bw_3p    > * { border-width:        3px }
+  .btw_3p > * { border-top-width:    3px }
+  .brw_3p > * { border-right-width:  3px }
+  .bbw_3p > * { border-bottom-width: 3px }
+  .blw_3p > * { border-left-width:   3px }
+  .bxw_3p > * { border-right-width:  3px; border-left-width:   3px }
+  .byw_3p > * { border-top-width:    3px; border-bottom-width: 3px }
+
+.bw_4p    > * { border-width:        4px }
+  .btw_4p > * { border-top-width:    4px }
+  .brw_4p > * { border-right-width:  4px }
+  .bbw_4p > * { border-bottom-width: 4px }
+  .blw_4p > * { border-left-width:   4px }
+  .bxw_4p > * { border-right-width:  4px; border-left-width:   4px }
+  .byw_4p > * { border-top-width:    4px; border-bottom-width: 4px }
