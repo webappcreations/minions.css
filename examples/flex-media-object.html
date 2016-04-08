@@ -1,0 +1,88 @@
+---
+layout: bare
+---
+
+<style>
+  /*
+   * the `.example` class provides theme styles.
+   * iv'e not used minions to preserve the clarity of the example.
+   * in an actual application, I'd use minion for these.
+   */
+  .example {
+    background-color: rgba(147,128,108,.1);
+    color: #404040;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: .25rem;
+    margin-top: 1rem;
+  }
+
+  /*
+   * these classes should be added to minions
+   */
+
+  .f-red { fill: #FF4136; }
+</style>
+
+
+<div class="example">
+  <div class="d-f ai-fs">
+    <img class="mr-1r bs-025r" src="https://dl.dropboxusercontent.com/u/72641/michael_chan_300x.jpg" width="48" height="48" />
+    <div class="f-1">
+      <h4 class="m-0 mb-05r">Standard Media Object</h4>
+      <div class="fw-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </div>
+  </div>
+</div>
+
+<div class="example">
+  <div class="d-f ai-fs">
+    <div class="f-1">
+      <h4 class="m-0 mb-05r">Reversed Media Object</h4>
+      <div class="fw-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </div>
+    <img class="ml-1r bs-025r" src="https://dl.dropboxusercontent.com/u/72641/michael_chan_300x.jpg" width="48" height="48" />
+  </div>
+</div>
+
+<div class="example">
+  <div class="d-f ai-fs">
+    <img class="mr-1r bs-025r" src="https://dl.dropboxusercontent.com/u/72641/michael_chan_300x.jpg" width="48" height="48" />
+    <div class="f-1">
+      <h4 class="m-0 mb-05r">Thread Media Object</h4>
+      <div class="fw-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+
+      <div class="example">
+        <div class="d-f ai-fs">
+          <img class="mr-1r bs-025r" src="https://dl.dropboxusercontent.com/u/72641/michael_chan_300x.jpg" width="32" height="32" />
+          <div class="f-1">
+            <div class="fw-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="example">
+        <div class="d-f ai-fs">
+          <div class="f-1">
+            <div class="fw-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+          <img class="ml-1r bs-025r" src="https://dl.dropboxusercontent.com/u/72641/michael_chan_300x.jpg" width="32" height="32" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="example">
+  <div class="d-f ai-c">
+    <svg class="d-ib mr-1r f-red" width="48" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.985 11.49c.197.2.298.43.298.686 0 .258-.1.487-.298.685l-1.03 1.05a.947.947 0 0 1-.7.3.922.922 0 0 1-.69-.3L8 10.337 4.404 13.92a.94.94 0 0 1-.685.298.936.936 0 0 1-.686-.298l-1.03-1.03a.944.944 0 0 1-.3-.694c0-.263.1-.496.3-.695l3.618-3.636-3.69-3.606a.95.95 0 0 1-.298-.695c0-.264.1-.495.298-.693l1.03-1.032a.95.95 0 0 1 .7-.298c.267 0 .498.1.69.298L8 5.488l3.582-3.583c.197-.2.43-.298.695-.298.263 0 .496.1.693.298L14 2.935a.958.958 0 0 1 0 1.39l-3.623 3.642 3.608 3.524z"/></svg>
+    <div class="f-1">
+      <h4 class="m-0 mb-05r">Centered figure</h4>
+      <div class="fw-100">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id velit nisl. Nunc facilisis fringilla tortor. Nulla venenatis lobortis justo euismod imperdiet.
+      </div>
+    </div>
+  </div>
+</div>
