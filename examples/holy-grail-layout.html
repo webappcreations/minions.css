@@ -1,0 +1,44 @@
+---
+layout: bare
+---
+
+<style>
+  /*
+   * the `.example` class provides theme styles.
+   * iv'e not used minions to preserve the clarity of the example.
+   * in an actual application, I'd use minion for these.
+   */
+
+  .example-theme {}
+  .example-theme header,
+  .example-theme nav,
+  .example-theme aside,
+  .example-theme footer {
+    background-color: rgba(147,128,108,.1);
+    color: #404040;
+  }
+  .example-theme nav,
+  .example-theme aside { min-width: 10rem }
+
+  /*
+   * these classes should be added to minions
+   */
+
+  .nh-100vh { min-height: 100vh }
+</style>
+
+<div class="d-f fd-c nh-100vh example-theme">
+  <header class="gc-l.9 p-1r">Header</header>
+
+  <div class="d-f f-1 fd-c@mn fd-r@md p-1r p_1r">
+    <nav>Nav</nav>
+
+    <main class="f-1">
+      Use the inspector to explore how this layout is built.
+    </main>
+
+    <aside>Ads</aside>
+  </div>
+
+  <footer class="gc-l.9 p-1r">Footer</footer>
+</div>
