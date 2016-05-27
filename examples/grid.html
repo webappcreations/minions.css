@@ -1,0 +1,80 @@
+---
+layout: bare
+---
+
+<style>
+  /*
+   * the `.example` class provides theme styles.
+   * iv'e not used minions to preserve the clarity of the example.
+   * in an actual application, I'd use minion for these.
+   */
+
+  .example-container {
+    max-width: 960px;
+  }
+  .example-theme {}
+  .example-theme header,
+  .example-theme nav,
+  .example-theme aside,
+  .example-theme footer {
+    background-color: rgba(147,128,108,.1);
+    color: #404040;
+  }
+  .example-theme nav,
+  .example-theme aside { min-width: 10rem }
+
+  /*
+   * these classes should be added to minions
+   */
+
+  .nh-100vh { min-height: 100vh }
+
+  .example {}
+  .example > * {
+    background-color: rgba(147,128,108,.1);
+    color: #404040;
+    text-align: center;
+    padding: 1rem;
+  }
+  .ml_0\:fc *:first-child {
+    margin-left: 0;
+  }
+</style>
+
+<div style="max-width: 900px; margin: 0 auto">
+
+  <h3> Basic Grid </h3>
+  <div class="d-f f_1 my-1r ml_1r ml_0:fc example">
+    <div>1/1</div>
+    <div>1/1</div>
+  </div>
+
+  <div class="d-f f_1 my-1r ml_1r ml_0:fc example">
+    <div>1/3</div>
+    <div>1/3</div>
+    <div>1/3</div>
+  </div>
+
+  <div class="d-f f_1 my-1r ml_1r ml_0:fc example">
+    <div>1/4</div>
+    <div>1/4</div>
+    <div>1/4</div>
+    <div>1/4</div>
+  </div>
+
+  <div class="d-f f_1 my-1r ml_1r ml_0:fc example">
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id velit nisl. Nunc facilisis fringilla tortor. Nulla venenatis lobortis justo euismod imperdiet. Integer in massa dictum, molestie dui et, rhoncus neque. Cras imperdiet lectus erat, eu pulvinar tellus faucibus ac. Maecenas ullamcorper commodo tincidunt. Nulla facilisi.
+</div>
+  </div>
+
+  <h3 id="individual-sizing"> Individual Sizing </h3>
+  <div class="d-f my-1r ml_1r ml_0:fc example">
+    <div class="f-2">1/2</div>
+    <div class="f-1">auto</div>
+    <div class="f-1">auto</div>
+  </div>
+</div>
