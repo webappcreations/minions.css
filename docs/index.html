@@ -1,77 +1,115 @@
 <!doctype html>
 <html>
 <head>
-  <link rel="stylesheet" href="./src/position.css"></link>
-  <link rel="stylesheet" href="./src/display.css"></link>
-  <link rel="stylesheet" href="./src/float_.css"></link>
-  <link rel="stylesheet" href="./src/float.css"></link>
-  <link rel="stylesheet" href="./src/opacity.css"></link>
-  <link rel="stylesheet" href="./src/overflow.css"></link>
-  <link rel="stylesheet" href="./src/visibility.css"></link>
-  <link rel="stylesheet" href="./src/margin_.css"></link>
-  <link rel="stylesheet" href="./src/margin_first-child.css"></link>
-  <link rel="stylesheet" href="./src/margin.css"></link>
-  <link rel="stylesheet" href="./src/border-width.css"></link>
-  <link rel="stylesheet" href="./src/padding_.css"></link>
-  <link rel="stylesheet" href="./src/padding.css"></link>
-  <link rel="stylesheet" href="./src/padding-important.css"></link>
-  <link rel="stylesheet" href="./src/color.css"></link>
-  <link rel="stylesheet" href="./src/color_lightness.css"></link>
-  <link rel="stylesheet" href="./src/background-color_.css"></link>
-  <link rel="stylesheet" href="./src/background-color.css"></link>
-  <link rel="stylesheet" href="./src/background-color__lightness.css"></link>
-  <link rel="stylesheet" href="./src/background-color_lightness.css"></link>
-  <link rel="stylesheet" href="./src/border-color.css"></link>
-  <link rel="stylesheet" href="./src/border-color_lightness.css"></link>
-  <link rel="stylesheet" href="./src/flex_.css"></link>
-  <link rel="stylesheet" href="./src/flex.css"></link>
-  <link rel="stylesheet" href="./src/flex-wrap.css"></link>
-  <link rel="stylesheet" href="./src/-row-gutter.css"></link>
-  <link rel="stylesheet" href="./src/-column-gutter.css"></link>
-  <link rel="stylesheet" href="./src/align-items.css"></link>
-  <link rel="stylesheet" href="./src/align-self.css"></link>
-  <link rel="stylesheet" href="./src/justify-content.css"></link>
-  <link rel="stylesheet" href="./src/text-align.css"></link>
-  <link rel="stylesheet" href="./src/z-index.css"></link>
-  <link rel="stylesheet" href="./src/list-style-type.css"></link>
-  <link rel="stylesheet" href="./src/text-transform.css"></link>
-  <link rel="stylesheet" href="./src/text-transform_.css"></link>
-  <link rel="stylesheet" href="./src/font-weight.css"></link>
-  <link rel="stylesheet" href="./src/font-size.css"></link>
-  <link rel="stylesheet" href="./src/line-height.css"></link>
-  <link rel="stylesheet" href="./src/border-radius.css"></link>
-  <link rel="stylesheet" href="./src/border-radius_.css"></link>
-  <link rel="stylesheet" href="./src/top.css"></link>
-  <link rel="stylesheet" href="./src/right.css"></link>
-  <link rel="stylesheet" href="./src/bottom.css"></link>
-  <link rel="stylesheet" href="./src/left.css"></link>
-  <link rel="stylesheet" href="./src/text-decoration.css"></link>
-  <link rel="stylesheet" href="./src/text-decoration_.css"></link>
-  <link rel="stylesheet" href="./src/transition-property.css"></link>
-  <link rel="stylesheet" href="./src/transition-duration.css"></link>
-  <link rel="stylesheet" href="./src/transition-timing-function.css"></link>
-  <link rel="stylesheet" href="./src/width.css"></link>
-  <link rel="stylesheet" href="./src/cursor.css"></link>
+  <link rel="stylesheet" href="./docs-minions.css"></link>
+  <style>
+    .ff-sans-serif {
+      font-family: -apple-system, BlinkMacSystemFont,
+                  'avenir next', avenir,
+                  helvetica, 'helvetica neue',
+                  ubuntu,
+                  roboto, noto,
+                  'segoe ui', arial,
+                  sans-serif;
+    }
+
+    /* http://nicolasgallagher.com/micro-clearfix-hack/ */
+    .cf:before,
+    .cf:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    .cf:after {
+        clear: both;
+    }
+  </style>
+
+  <style>
+    .gc-highlight { background-color: hsla(300, 100%, 50%, .2) }
+  </style>
 </head>
-<body>
-  <h2 id="display"> Display </h2>
-  <div class="d-b">  block </div>
-  <div class="d-i">  inline </div>
-  <div class="d-ib"> inline-block </div>
-  <div class="d-f">  flex </div>
-  <div class="d-t">  table </div>
-  <div class="d-tc"> table-cell </div>
-  <div class="d-tr"> table-row </div>
+<body class="ff-sans-serif" style="min-width: 400px; max-width: 600px; margin: 0 auto">
+  <section>
+    <h2 id="display"> Display </h2>
 
-  <h2 id="float"> Float </h2>
-  <div class="f-l"> left </div>
-  <div class="f-n"> none </div>
-  <div class="f-r"> right </div>
+    <div class="d-f f_1">
+      <div class="mb_1r">
+        <div class="bw-1p bc-l.8">
+          <div class="d-b gc-highlight">  block </div>
+        </div>
 
-  <h2 id="float_"> Float </h2>
-  <div class="f_l"> <div>left</div> </div>
-  <div class="f_n"> <div>none</div> </div>
-  <div class="f_r"> <div>right</div> </div>
+        <div class="bw-1p bc-l.8">
+          <div class="d-i gc-highlight">  inline </div>
+        </div>
+
+        <div class="bw-1p bc-l.8">
+          <div class="d-ib gc-highlight"> inline-block </div>
+        </div>
+
+        <div class="bw-1p bc-l.8">
+          <div class="d-f gc-highlight">  flex </div>
+        </div>
+
+        <div class="bw-1p bc-l.8">
+          <div class="d-t">
+            <div class="d-tr">
+              <div class="d-tc gc-highlight"> table-cell </div>
+              <div class="d-tc gc-highlight"> table-cell </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bw-1p bc-l.8 mb-1r">
+          <div class="d-t">
+            <div class="d-tr gc-highlight"> table-row </div>
+            <div class="d-tr gc-highlight"> table-row </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <code><pre>
+          .d-b  { display: block }
+          .d-i  { display: inline }
+          .d-ib { display: inline-block }
+          .d-f  { display: flex }
+          .d-t  { display: table }
+          .d-tc { display: table-cell }
+          .d-tr { display: table-row }
+        </pre></code>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 id="float"> Float </h2>
+
+    <div class="d-f f_1">
+      <div class="mb_1r">
+        <div class="bw-1p bc-l.8 cf">
+          <div class="f-n gc-highlight"> none </div>
+        </div>
+
+        <div class="bw-1p bc-l.8 cf">
+          <div class="f-l gc-highlight"> left </div>
+        </div>
+
+        <div class="bw-1p bc-l.8 cf">
+          <div class="f-r gc-highlight"> right </div>
+        </div>
+      </div>
+
+      <div>
+        <code><pre>
+          .c-n  { clear: none }
+          .c-l  { clear: left }
+          .c-r  { clear: right }
+        </pre></code>
+      </div>
+    </div>
+
+  </section>
 
   <h2 id="flex"> Flex </h2>
   <h4> .fd-r </h4>
