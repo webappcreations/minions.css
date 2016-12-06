@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title><%= mod.name %> | minions.css by @chantastic</title>
+  <style>
+    .ff-system-sans{font-family:-apple-system,BlinkMacSystemFont,sans-serif}
+    .fs-20p{font-size:20px}
+    .m-0{margin:0}
+    .px-2r{padding-right:2rem;padding-left:2rem}
+  </style>
+</head>
+<body class="ff-system-sans fs-20p m-0 px-2r">
+  <h1>minions.<%= packageName %></h1>
+
+  <a href="<%= mod.repository %>/tree/v<%= mod.version %>/packages/<%= packageName %>">
+    source on Github
+  </a>
+
+  <br />
+  <hr />
+
+  <pre>
+    <code>
+<%= code %>
+    </code>
+  </pre>
+
+  <hr />
+
+  <h2>Installation</h2>
+  <h4>npm</h4>
+  <code>npm install minions.<%= packageName %>@<%= mod.version %></code>
+
+  <h4>browser</h4>
+  <code>&lt;link rel="stylesheet" href="https://unpkg.com/minions.<%= packageName %>@<%= mod.version %>" /&gt;</code>
+
+  <h2>License</h2>
+  <p>The MIT License (MIT)<br />Copyright (c) 2016 Michael Chan</p>
+</body>
+</html>
