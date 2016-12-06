@@ -10,4 +10,5 @@ const getDirectories = (srcpath) =>
 fs.readdir("./packages", (_, packages) =>
   packages.forEach(package =>
     fs.readFile(`./packages/${package}/${package}.css`, "utf8", (_, file) =>
-      console.log(package, file))))
+      fs.writeFile(`./packages/${package}/README.md`, file, (_, file) =>
+        console.log(`${package} README.md written.\n`)))))
