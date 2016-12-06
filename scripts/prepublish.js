@@ -12,12 +12,26 @@ const writeFiles = ({ packageName, code, mod }) => {
       console.log(`${packageName} index.html written.`)))
 }
 
-fs.readdir("./packages", (_, packages) =>
-  packages.forEach(packageName =>
-    fs.readFile(`./packages/${packageName}/package.json`, "utf8", (_, mod) =>
-      fs.readFile(`./packages/${packageName}/${packageName}.css`, "utf8", (_, code) =>
-        writeFiles({packageName, code, mod: JSON.parse(mod)})))))
+fs.readdir("./packages", (err, packages) => {
+  if (err) throw err;
+  return packages.filter((file) =>
+    fs.statSync(path.join("./packages", file)).isDirectory()
+  ).forEach(packageName => {
+    if (err) throw err;
+    return fs.readFile(`./packages/${packageName}/package.json`, "utf8", (err, mod) => {
+      if (err) throw err;
+      return fs.readFile(`./packages/${packageName}/${packageName}.css`, "utf8", (err, code) => {
+        if (err) throw err;
+        return writeFiles({packageName, code, mod: JSON.parse(mod)})
+      })
+    })
+  })
+})
 
-fs.readdir("./packages", (_, packages) =>
-  cons["lodash"]("scripts/_package_index.html", {packages}, (_, html) =>
-    fs.writeFile(`./index.html`, html, (_, __) => console.log(`index.html written.`))))
+fs.readdir("./packages", (err, packages) => {
+  if (err) throw err;
+  return cons["lodash"]("scripts/_package_index.html", {packages}, (err, html) => {
+    if (err) throw err;
+    fs.writeFile(`./index.html`, html, (_, __) => console.log(`index.html written.`))
+  })
+})
