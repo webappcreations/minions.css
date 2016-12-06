@@ -13,7 +13,9 @@
   "repository": "https://github.com/chantastic/minions.css",
   "license": "MIT",
   "dependencies": {
-    "clean-css": "^3.4.9"
+    "clean-css": "^3.4.9",
+    "consolidate": "^0.14.5",
+    "lodash": "^4.17.2"
   },
   "devDependencies": {
     "lerna": "2.0.0-beta.30"
